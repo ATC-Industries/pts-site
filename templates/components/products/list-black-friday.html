@@ -1,0 +1,41 @@
+<h1 class="text-center mb-4">2 Great Ways to Save!</h1>
+
+<div class="row">
+    <div class="col-md-6">
+<div class="container p-2 mb-3 text-center font-weight-bold" style="background-color: black; color: white; font-size: 2em; border-bottom: solid 4px grey;"><span>Model 357 Scale for only $299!</span></div>
+<p class="lead text-justify">The Model 357, our most popular selling unit, is available over Black Friday/Cyber Monday weekend for the low price of $299.  That's over $150 off list price and the lowest we've ever sold it for!</p>
+<hr>
+<ul class="productList">
+       {{#each products}}
+       {{#if id '===' 104}}
+        <li class="product">
+            {{>components/products/list-item-black-friday show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer}}
+        </li>
+        {{/if}}
+        {{/each}}
+</ul>
+<hr />
+</div>
+
+<div class="col-md-6">
+<!-- <h1 class="text-center mb-4">-- OR --</h1> -->
+<div class="container p-2 mb-3 text-center font-weight-bold" style="background-color: black; color: white; font-size: 2em; border-bottom: solid 4px grey;"><span>Free 4" LED Display!</span></div>
+<p class="lead text-justify">Purchase any Deluxe, Pro or Ultimate System and get a 2nd 4" LED Display for absolutly free!  Just add one of the systems below to your cart and the LED display will show up in your cart for $0.00!</p>
+<hr>
+<ul class="productList">
+{{#each products}}
+{{#unless id '===' 104}}
+<li class="product">
+    {{>components/products/list-item-black-friday show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer}}
+</li>
+{{/unless}}
+{{/each}}
+</ul>
+</div>
+</div>
+<hr />
+<h3>Deals this good don't come without a little fine print:</h3>
+<p>Promotions valid Thursday, November 23, 2017 11:00am EST – Monday, November 27, 2017 11:59pm EST unless otherwise stated. 
+    Pricing, promotions, and availability may be limited. No Price adjustments.  No rain checks. Payment must be received 
+    during promotion period. Not valid with any other coupons, deals, discounts or promotions. Descriptive, typographic and 
+    photographic errors are subject to correction and Pro Tournament Scales shall have no liability for such errors.</p>

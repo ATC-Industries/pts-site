@@ -1,0 +1,93 @@
+---
+products:
+    new:
+        limit: {{theme_settings.homepage_new_products_count}}
+    featured:
+        limit: {{theme_settings.homepage_featured_products_count}}
+    top_sellers:
+        limit: {{theme_settings.homepage_top_products_count}}
+carousel: {{theme_settings.homepage_show_carousel}}
+blog:
+    recent_posts:
+        limit: {{theme_settings.homepage_blog_posts_count}}
+---
+
+{{#partial "hero"}}
+    {{#if carousel}}
+        {{> components/carousel}}
+    {{/if}}
+    {{{snippet 'home_content'}}}
+{{/partial}}
+
+{{#partial "page"}}
+
+    {{#each shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+
+<div class="jumbotron h2_main">
+    <div class="row">
+        <div class="banner_text">
+        <h1>The Most Accurate and Fastest Scales</h1>
+        <p class="lead">The H2 Scale is the fastest and most accurate scale designed for tournament fishing.</p>
+        <a class="button button--primary" href="../scale-systems/h2-scale-system/"role="button">Learn More</a> 
+        <div class="embed-responsive embed-responsive-16by9 col-md-5">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DPeydUYz3RM" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>    
+</div>
+    
+    <!-- Boxes -->
+    <div class="marketing">    
+
+    <div class="row">
+        <div class="col-lg-4">
+        <div class="jumbotron boxes acc_box">
+            <div class="need_banner_text">
+            <h1 class="display-8">The Accessories You Need</h1>
+            <a class="button button--primary" href="https://tournamentscales.com/accessories-3/" role="button">Shop Accessories</a>
+            <div class="textbox">
+                <p class="lead align-bot">Baskets, Cases, Software, Printers and More.</p>
+                </div>
+        </div>
+    </div>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-8">
+        
+        <div class="jumbotron boxes model357">
+        <div class="numone">
+        <!--<div class="banner_text">-->
+            <h1>#1 Selling Tournament Scale in America</h1>
+        <p class="lead">For over 5 years the Model 357 has sold more units than any other scale.</p>
+        
+            <a class="button button--primary" href="https://tournamentscales.com/scale-systems/model-357/" role="button">Learn more</a>
+        </div>
+        </div>
+
+        </div><!-- /.col-lg-8 -->
+    </div><!-- /.row -->
+
+
+
+
+
+
+<div class="main full">
+    
+
+    {{#if products.featured}}
+        {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+    {{/if}}
+
+    {{#if products.top_sellers}}
+        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
+    {{/if}}
+
+    {{#if products.new}}
+        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+    {{/if}}
+</div>
+{{/partial}}
+{{> layout/base}}

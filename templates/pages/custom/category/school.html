@@ -1,0 +1,48 @@
+---
+category:
+    shop_by_price: false
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">DOUBLE<br>YOUR DOLLARS!</h1>
+      <p class="lead">$1 for $1 match up to $500</p>
+    </div>
+  </div>
+<p>It doesn’t take much when you start to think about it.  If you have 15 kids in your club and each one of them can raise just $1 from 15 of their family members and neighbors then that would be $225.  With Pro Tournament Scales matching that by adding another $225 you’re up to $450.  That’s the cost of a brand new Model 357 scale.  Raise even more money and you can get the H2 or add a remote display!</p>
+<p>PTS will match up to $500, that means if you raised $500 We’ll kick in $500 for a total of $1000 to spend.  If you raise more that’s okay too, we’ll still kick in $500.</p>
+<button type="button" class="btn btn-outline-primary btn-lg"><a  style="text-decoration:none;" href="https://s3.us-east-2.amazonaws.com/www.tournamentscales.com/PTS+Education+Donation.pdf">Download Information Document</a></button>
+<h3>How to Qualify:</h3>
+<h4>Promotion Period</h4>
+<p>donation promotion is valid on orders placed between February 19, 2018 through June 15, 2018. Not valid on past orders.</p>
+
+<h4>Qualification for donation</h4>
+<ul>
+    <li>Must be an accredited high school, middle school, college or university located in the United States.</li>
+    <li>Must not have received this donation in the past. (10% YOUTH discount given in the past does not disqualify you from receiving this offer)</li>
+    <li>If not affiliated with a school must be a member of an approved School/Student Fishing Organization (Student Angler Federation, Bassmaster High School)</li>
+</ul>
+<h4>Procedure for validation</h4>
+<li>Signed letter form school Principal or Dean on school letterhead emailed to sales@tournamentscales.com.</li>
+        <li>School issued purchase order.</li>
+                <li>Proof of approved School/Student Fishing Organization membership.  </li>
+
+<p>Donation is not for use in adult, mixed or legacy tournaments.</p>
+
+<h4>Donation Format</h4>
+<p>Donation will be given in the form of a discount on PTS products,  Only valid on products manufactured by Pro Tournament Scales. Only valid for use on scales systems, remote displays and leader-boards.</p>
+
+{{/partial}}
+{{> layout/base}}

@@ -1,0 +1,105 @@
+---
+category:
+    shop_by_price: false
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+<!-- *********************************************** -->
+<!-- JUMBOTRON -->
+<div class="jumbotron winter_jumbo">
+  <div class="rows">
+    <div class="col-md-5 h2_jumbo_content rounded">
+      <!-- <h1 class="display-3">Are Fish Wet?</h1>
+      <p class="lead">That's why our H2 professional line of tournament scales are waterproof.</p>
+      <hr class="my-4">
+      <p>IP6x rated so you can use your scale the way it was inteded to be used.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#h2" role="button">Learn more</a>
+      </p> -->
+    </div>
+  </div>
+</div>
+<!-- /END JUMBOTRON -->
+<!-- *********************************************** -->
+
+
+<!-- Marketing messaging and featurettes
+      ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="wrapper winter_sale border mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-deulxe-800x600-300-off.png?t=1513021900" alt="H2 Deluxe is on sale for $300 off">
+    </div>
+    <div class="col-md-6 ws_column">
+      <div class="winter_sale_price_box ml-5">
+      <h2>DELUXE H2 Scale System</h2>
+      <p class="lead">Save $300 from December 11-26*</p>
+      <hr class="my-4">
+      <h2 class="price_in">$1,599 <span class="price_out"><s>$1,899</s></span></h2>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/h2-scale-deluxe-system/" role="button">BUY NOW</a>
+      </p>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<div class="wrapper winter_sale border mb-3">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/printer-800x600.png?t=1513024112" alt="H2 Pro is on sale for $400 off">
+      </div>
+      <div class="col-md-6 ws_column">
+        <div class="winter_sale_price_box ml-5">
+        <h2>PRO H2 Scale System</h2>
+        <p class="lead">Save $400 from December 11-26*</p>
+        <hr class="my-4">
+        <h2 class="price_in">$2,199 <span class="price_out"><s>$2,599</s></span></h2>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="/h2-scale-pro-system/" role="button">BUY NOW</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  
+  </div>
+
+
+<hr class="featurette-divider"> {{{snippet 'categories'}}}
+<div id="h2" class="page">
+  <main class="page-content" id="product-listing-container">
+    {{#if category.products}} {{> components/category/product-listing}} {{else}}
+    <p>{{lang 'categories.no_products'}}</p>
+    {{/if}}
+  </main>
+</div>
+<div class="container">
+  {{{category.description}}}
+
+<h6 class="text-center">*Terms &amp Conditions</h6>
+<ol>
+  <li>The Pro Tournament Scales Winter Holiday Sale is valid between Dec 11, 21:00 pm, and Dec 26, 11:59pm (UTC-5), 2017. This promotion only applies to orders that have succesfully completed payment within the validity period.</li>
+  <li>Applicable free accessories will be shipped with the purchased product or combo.</li>
+  <li>Discounts, coupons, and free accessories offered during the Pro Tournament Scales Winter Holiday Sale are subject to availability; Pro Tournament Scales reserves the right to withdraw the offer if necessary, without liability.</li>
+  <li>Actual shipping time might delay, due to large amount of orders during the Pro Tournament Scales Winter Holiday Sale</li>
+</ol>
+
+
+</div>
+</div>
+{{/partial}} {{> layout/base}}

@@ -1,0 +1,129 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
+<h1 class="page-heading">{{category.name}}</h1>
+
+<section class="pricing" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                            <div class="pt-price"><small>from</small>$425</div>
+                            <div class="pt-name">Model 357</div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                    <li><i class="fa fa-check"></i> Up to 50 lbs</li>
+                                    <li><i class="fa fa-check"></i> Hold Feature</li>
+                                    <li><i class="fa fa-check"></i> Stainless Steel and plastic</li>
+                                    <li><i class="fa fa-check"></i> 11x15 platform</li>
+                                    <li><i class="fa fa-times"></i> Motion Locking</li>
+                                    <li><i class="fa fa-times"></i> Water Resistant</li>
+                                    <li><i class="fa fa-check"></i> 1-Year Warranty</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="https://tournamentscales.com/scale-systems/model-357/" class="button button--primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pricing-table featured">
+                        <div class="pricing-header">
+                            <div class="pt-price">$1445<small>+</small></div>
+                            <div class="pt-name">H2 Series</div>
+                            <div class="featured-text">Motion Lock</div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                    <li><i class="fa fa-check"></i> up to 75 lbs</li>
+                                    <li><i class="fa fa-check"></i> Trusted H2 Technology</li>
+                                    <li><i class="fa fa-check"></i> Stainless Steel Platform</li>
+                                    <li><i class="fa fa-check"></i> 10x10 platform</li>
+                                    <li><i class="fa fa-check"></i> Motion Locking</li>
+                                    <li><i class="fa fa-check"></i> Water Resistant</li>
+                                    <li><i class="fa fa-check"></i> 3-Year Warranty</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="https://tournamentscales.com/scale-systems/h2-scale-system/" class="button button--primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                            <div class="pt-price">$450<small>and up</small></div>
+                            <div class="pt-name">Catfish</div>
+                            
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                    <li><i class="fa fa-check"></i> Up to 250 lbs</li>
+                                    <li><i class="fa fa-check"></i> 357 or H2</li>
+                                    <li><i class="fa fa-check"></i> H2 for water Weigh-in</li>
+                                    <li><i class="fa fa-check"></i> larger platform</li>
+                                    <li><i class="fa fa-check"></i> Motion Locking (H2 only)</li>
+                                    <li><i class="fa fa-check"></i> Water Resistant</li>
+                                    <li><i class="fa fa-check"></i> 3-Year Warranty</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="https://tournamentscales.com/catfish-series/" class="button button--primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                            <div class="pt-price"><small>from</small>$1399</div>
+                            <div class="pt-name">Saltwater</div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Up to 5,000 lbs</li>
+                                <li><i class="fa fa-check"></i> Trusted H2 Technology</li>
+                                <li><i class="fa fa-check"></i> Stainless Steel Load Cell</li>
+                                <li><i class="fa fa-check"></i> Hanging S-Hook</li>
+                                <li><i class="fa fa-check"></i> Motion Locking</li>
+                                <li><i class="fa fa-check"></i> Water Resistant</li>
+                                <li><i class="fa fa-check"></i> 3-Year Warranty</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="https://tournamentscales.com/h2-scale-saltwater-system/" class="button button--primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{#if category.image}}
+    <img src="{{getImage category.image 'zoom_size'}}">
+{{/if}}
+
+    {{{category.description}}}
+
+    {{/partial}}
+    {{> layout/base}}
+    

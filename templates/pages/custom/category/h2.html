@@ -1,0 +1,329 @@
+---
+category:
+    shop_by_price: false
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+<!-- *********************************************** -->
+<!-- JUMBOTRON -->
+<div class="jumbotron h2_page">
+  <div class="rows">
+    <div class="col-md-5 h2_jumbo_content rounded">
+      <h1 class="display-3">Are Fish Wet?</h1>
+      <p class="lead">That's why our H2 professional line of tournament scales are waterproof.</p>
+      <hr class="my-4">
+      <p>IP6x rated so you can use your scale the way it was inteded to be used.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#h2" role="button">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- /END JUMBOTRON -->
+<!-- *********************************************** -->
+
+
+<!-- Marketing messaging and featurettes
+      ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="h2_features">
+    <div class="row">
+      <div class="col-lg-2 col-md-4">
+          <span class="fa-layers fa-fw fa-7x">
+              <i class="fas fa-lock"></i>
+              <i class="fa-inverse fas fa-balance-scale" data-fa-transform="shrink-10 down-3"></i>
+            </span>
+        <h4>Dual Harmonic Motion Filtering</h4>
+        <p>Automatically locks onto moving fish in less than 4 seconds. Guaranteed.</p>
+        <!-- <a href="#h2" class="button button--small">View details &raquo;</a> -->
+      </div>
+      <!-- /.col-lg-2 -->
+  
+      <div class="col-lg-2 col-md-4">
+          <span class="fa-layers fa-fw fa-7x">
+              <i class="fas fa-shield-alt"></i>
+              <!-- <span class="fas fa-layers-text fa-inverse" data-fa-transform="shrink-2" style="font-weight:900">3</span> -->
+            </span>
+        <h4>3 Year Warranty</h4>
+        <p>We built a scale to last, that's why we offer a 3 year warranty on the H2 Tournament Weigh-In Scale.</p>
+        <!-- <a href="#h2" class="button button--small">View details &raquo;</a> -->
+      </div>
+      <!-- /.col-lg-2 -->
+  
+      <div class="col-lg-2 col-md-4">
+        <i class="fas fa-battery-full fa-7x"></i>
+        <h4>Over 20 Hours of Battery</h4>
+        <p>Rechargable internal lithium-ion battery will keep the H2 runnign all day long.</p>
+        <!-- <a href="#h2" class="button button--small">View details &raquo;</a> -->
+      </div>
+      <!-- /.col-lg-2 -->
+  
+      <div class="col-lg-2 col-md-4">
+        <i class="fas fa-wifi fa-7x" data-fa-transform="rotate-90 shrink-5"></i>
+        <h4>Internal Radio</h4>
+        <p>Wireless communication to remote scoreboards and computer tournament management software.</p>
+        <!-- <a href="#h2" class="button button--small">View details &raquo;</a> -->
+      </div>
+      <!-- /.col-lg-2 -->
+  
+      <div class="col-lg-2 col-md-4">
+        <i class="fas fa-thermometer-empty fa-7x"></i>
+        <h4>Works in harsh environments</h4>
+        <p>From -20&#176 up to 140&#176 You can trust the H2 Scale System to always be there for you. </p>
+        <!-- <a href="#h2" class="button button--small">View details &raquo;</a> -->
+      </div>
+      <!-- /.col-lg-2 -->
+  
+      <div class="col-lg-2 col-md-4">
+        <i class="fas fa-tint fa-7x"></i>
+        <h4>IP6x Waterproof</h4>
+        <p>You need it to work around wet flopping fish right?</p>
+        <!-- <a href="#h2" class="button button--small">View details &raquo;</a> -->
+      </div>
+      <!-- /.col-lg-2 -->
+  </div>
+  <!-- /.row -->
+</div>
+</div>
+
+<!-- START THE FEATURETTES -->
+
+<div class="row">
+  <div class="col-lg-8">
+
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="first-slide" src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-scale-wood-900x600.jpg?t=1513001083" alt="H2 Scale on wood platform">
+       
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-scale-in-case-900x600.jpg?t=1513001503" alt="H2 Scale in storage case">
+  
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-all-alone.jpg?t=1513001963" alt="H2 Tournament Fishing Scale">
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+  </div>
+  <div class="col-lg-4">
+    <!-- <h2>Videos</h2> -->
+    <div class="embed-responsive embed-responsive-16by9 mb-1">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DPeydUYz3RM?rel=0" allowfullscreen></iframe>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9 mb-1">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NRno2x5sTsU?rel=0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-lg-6 text-center">
+    <h2>The most advanced and accurate scale, ever.</h2>
+    <p class="lead">If you are looking for the best weighing system out there, the H2 Series won't let you down. <span class="text-muted">The dual harmonic filtering allows the H2 to lock onto the weight of a thrashing fish within 5 seconds, every time! Be prepared this season and run the most efficient trail to date.</span></p>
+    </h4>
+    <img src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-rendering-cropped.jpg?t=1513003442" alt="H2 rendering">
+  </div>
+  <div class="col-lg-6">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col" colspan="2">Specifications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-right">Power</th>
+          <td>10-17V DC
+            <br> 120mA, backlight off
+            <br> 270mA, backlight 100%</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Battery</th>
+          <td>Lithium-Ion 14.8V 2200mAh
+            <br> Up to 25 hours of run time, backlight off
+            <br> Up to 6 hours of run time, backlight 100%</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Enclosure</th>
+          <td>Structural poly-carbonate</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Internal Radio</th>
+          <td>FCC approved, 100 ft range</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Display</th>
+          <td>6 digit, 14 segment, 1.1” character
+            <br> 10-level brightness backlight</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">A/D Conversion</th>
+          <td>60 times per second</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Units</th>
+          <td>Lb - 50.00 lb x .01 lb
+            <br> Kg - 25 kg x .01 kg
+            <br> Lb/oz - 50 lb x .1 oz</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Zero Track</th>
+          <td>5 counts (.05 lb)</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Environment</th>
+          <td>-20°F to 140°F
+            <br> (Waterproof)
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-right">Certifications</th>
+          <td>NTEP CC#: 02-069<br>CDN W&ampM: AM-5507
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading">Pro Equipment.
+      <br>
+      <span class="text-muted">For Pro Tournaments.</span>
+    </h2>
+    <p class="lead">If you want your anglers to take you seriously you can put that $89 walmart scale back in the boat.</p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="featurette-image img-fluid mx-auto" src="https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-head.png?t=1512849081"
+      alt="H2 Tournament Fishing Scale">
+  </div>
+</div>
+
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->
+
+<!-- START THE TESTIMONIAL -->
+
+<h1 class="text-center">Testimonials</h1>
+<div class="row">
+  <div class="col-sm-6">
+    <div id="tb-testimonial" class="testimonial testimonial-primary">
+      <div class="testimonial-section">
+        I have been a weigh-master for the Potholes Bass Club for over 25 years. Our Club decided, on my insistence, to purchase this H2 scale- deluxe system. This is the best system I have ever worked with and I highly recommend it! The system is worth every penny when it comes to weighing tournaments. Easier on the fish because of the ease and speed of weighing in. Fabulous product, enough said!
+      </div>
+      <div class="testimonial-desc">
+        <!-- <img src="http://www.oregonbassfederation.org/newsite/img/logo.png" alt="" /> -->
+        <div class="testimonial-writer">
+          <div class="testimonial-writer-name">Thomas T.</div>
+          <div class="testimonial-writer-designation">Weigh-Master</div>
+          <a href="https://www.facebook.com/PotholesBassClub/" class="testimonial-writer-company">Potholes Bass Club</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div id="tb-testimonial" class="testimonial testimonial-primary">
+      <div class="testimonial-section">
+        We just got this system a couple weeks ago and used it for our first event for Man vs Bass Maine Trail. This scale is fast and accurate. Locks in as advertised. Had 45 teams weighed in about 45 minutes.
+      </div>
+      <div class="testimonial-desc">
+        <!-- <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" /> -->
+        <div class="testimonial-writer">
+          <div class="testimonial-writer-name">Corey V.</div>
+          <div class="testimonial-writer-designation">President</div>
+          <a href="http://www.mvbmainetrail.com/" class="testimonial-writer-company">Maine Man vs Bass Trail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-6">
+    <div id="tb-testimonial" class="testimonial testimonial-primary">
+      <div class="testimonial-section">
+        If you want to impress your anglers, sponsors, and the general public, then this system is for you. The weigh system itself is dependable and durable. We frequently check our calibrations and have yet to need to recalibrate the scale. The display board leaves no doubt for the anglers and public that the weight you call out is the actual weight. The printer may be the best feature, allowing you the ability to print out a weigh-in ticket so that the angler has an actual record in hand, plus you have a paper back-up just in case of a electronics snafu. We have used this system for 5 tournaments in the past 10 months, and all we get are 'WOW' and thanks for bringing a system where there is no question about the weigh-in results.</div>
+      <div class="testimonial-desc">
+        <!-- <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" /> -->
+        <div class="testimonial-writer">
+          <div class="testimonial-writer-name">Joe Grist</div>
+          <!-- <div class="testimonial-writer-designation">Title</div>
+                <a href="#" class="testimonial-writer-company">Club</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div id="tb-testimonial" class="testimonial testimonial-primary">
+      <div class="testimonial-section">
+        Used it for the first time with a tourney of 22 boats. Weights locked in super quick. Having the Display so everyone could see the weight kept behind the scales free of onlookers!!! Weigh in went smooth and fast!!
+      </div>
+      <div class="testimonial-desc">
+        <!-- <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" /> -->
+        <div class="testimonial-writer">
+          <div class="testimonial-writer-name">Tim</div>
+          <!-- <div class="testimonial-writer-designation">Title</div>
+                    <a href="#" class="testimonial-writer-company">Club</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /END THE TESTIMONIAL -->
+
+<hr class="featurette-divider"> {{{snippet 'categories'}}}
+<div id="h2" class="page">
+  <main class="page-content" id="product-listing-container">
+    {{#if category.products}} {{> components/category/product-listing}} {{else}}
+    <p>{{lang 'categories.no_products'}}</p>
+    {{/if}}
+  </main>
+</div>
+<div class="container">
+  {{{category.description}}}
+</div>
+</div>
+{{/partial}} {{> layout/base}}

@@ -1,0 +1,738 @@
+@import "homepage";
+
+
+
+// =============================================================================
+// CUSTOM CSS
+// =============================================================================
+// test line
+// SUPPORT PAGE
+
+.support {
+    @include breakpoint("medium") {
+        width: 45%;
+        margin: 5px;
+        float: left;
+    }
+}
+.service {
+    @include breakpoint("medium") {
+        width: 45%;
+        margin: 5px;
+        float: right;
+    }
+}
+#clear {
+    clear: both;
+}
+
+.support_service {
+  margin-bottom: 1em;
+}
+
+.downpdf:before {
+    content: "\f019";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+}
+
+// Clear Fix
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.comp_lead { 
+    font-size: 1.75em;
+    margin-bottom:0px; 
+}
+
+//  ---------------------------------------------------------
+
+
+
+
+  .pricing-table {
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .pricing-table .pricing-header .pt-price {
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 40px;
+  }
+  .pricing-table .pricing-header .pt-price small {
+    font-size: 13px;
+    color: #9a9a9a;
+    font-weight: 300;
+  }
+  .pricing-table .pricing-header .pt-name {
+    font-family:  Arial, Helvetica, sans-serif;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    color: #4c4c4c;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .pricing-table .pricing-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pricing-table .pricing-body ul li {
+    padding: 8px 25px;
+    margin: 0;
+  }
+  .pricing-table .pricing-body ul li:nth-child(even) {
+    background-color: #fafafa;
+  }
+  .pricing-table .pricing-body ul li .fa-times {
+    color: #ff6666;
+  }
+  .pricing-table .pricing-body ul li .fa-check {
+    color: $prime-color;
+  }
+  .pricing-table .pricing-footer {
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 1px solid #f2f2f2;
+  }
+  .pricing-table.featured .pricing-header {
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing-table.featured .pricing-header .pt-price {
+    color: $prime-color;
+  }
+  .pricing-table.featured .pricing-header .pt-price small {
+    color: $prime-color;
+  }
+  .pricing-table.featured .pricing-header .pt-name {
+    color: $prime-color;
+  }
+  .pricing-table.featured .pricing-header .featured-text {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $prime-color;
+    color: #fff;
+    position: absolute;
+    top: 22px;
+    left: -28px;
+    padding: 5px 0;
+    width: 126px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .featured-text {
+      font-size: 10px !important;
+  }
+  
+
+  // --------------------------
+  // MODEL 357
+  // --------------------------
+
+  /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  top: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  max-height: 32rem;
+  background-color: #777;
+}
+// .carousel-item > img {
+//   // position: absolute;
+//   top: 0;
+//   left: 0;
+//   // min-width: 100%;
+//   // height: 32rem;
+// }
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/*----------------------------------------------------*/
+/*----------------- Testimonials CSS -----------------*/
+/*----------------------------------------------------*/
+.testimonial{
+  margin-bottom: 10px;
+}
+
+  .testimonial-section {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      position: relative;
+      border: 1px solid #fff;
+  }
+  .testimonial-section:after {
+      top: 100%;
+      left: 50px;
+      border: solid transparent;
+      content: " ";
+      position: absolute;
+      border-top-color: #fff;
+      border-width: 15px;
+      margin-left: -15px;
+  }
+
+  .testimonial-desc {
+      margin-top: 20px;
+      text-align:left;
+      padding-left: 15px;
+  }
+      .testimonial-desc img {
+          border: 1px solid #f5f5f5;
+          border-radius: 150px;
+          height: 70px;
+          padding: 3px;
+          width: 70px;
+          display:inline-block;
+          vertical-align: top;
+      }
+
+      .testimonial-writer{
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 10px;
+      }
+
+          .testimonial-writer-name{
+              font-weight: bold;
+          }
+
+          .testimonial-writer-designation{
+              font-size: 85%;
+          }
+
+          .testimonial-writer-company{
+              font-size: 85%;
+          }
+  /*---- Outlined Styles ----*/
+  .testimonial.testimonial-default{
+      
+  }
+      .testimonial.testimonial-default .testimonial-section{
+          border-color: #777;
+      }
+
+          .testimonial.testimonial-default .testimonial-section:after{
+              border-top-color: #777;
+          }
+
+      .testimonial.testimonial-default .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-default .testimonial-desc img{
+              border-color: #777;
+          }
+
+          .testimonial.testimonial-default .testimonial-writer-name{
+              color: #777;
+          }
+
+  .testimonial.testimonial-primary{
+      
+  }
+      .testimonial.testimonial-primary .testimonial-section{
+          border-color: #337AB7;
+          color: #286090;
+          background-color: rgba(51, 122, 183, 0.1);
+      }
+
+          .testimonial.testimonial-primary .testimonial-section:after{
+              border-top-color: #337AB7;
+          }
+
+      .testimonial.testimonial-primary .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-primary .testimonial-desc img{
+              border-color: #337AB7;
+          }
+
+          .testimonial.testimonial-primary .testimonial-writer-name{
+              color: #337AB7;
+          }
+
+  .testimonial.testimonial-info{
+      
+  }
+      .testimonial.testimonial-info .testimonial-section{
+          border-color: #5BC0DE;
+          color: #31b0d5;
+          background-color: rgba(91, 192, 222, 0.1);
+      }
+
+          .testimonial.testimonial-info .testimonial-section:after{
+              border-top-color: #5BC0DE;
+          }
+
+      .testimonial.testimonial-info .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-info .testimonial-desc img{
+              border-color: #5BC0DE;
+          }
+
+          .testimonial.testimonial-info .testimonial-writer-name{
+              color: #5BC0DE;
+          }
+
+
+  .testimonial.testimonial-success{
+      
+  }
+      .testimonial.testimonial-success .testimonial-section{
+          border-color: #5CB85C;
+          color: #449d44;
+          background-color: rgba(92, 184, 92, 0.1);
+      }
+
+          .testimonial.testimonial-success .testimonial-section:after{
+              border-top-color: #5CB85C;
+          }
+
+      .testimonial.testimonial-success .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-success .testimonial-desc img{
+              border-color: #5CB85C;
+          }
+
+          .testimonial.testimonial-success .testimonial-writer-name{
+              color: #5CB85C;
+          }
+
+  .testimonial.testimonial-warning{
+      
+  }
+      .testimonial.testimonial-warning .testimonial-section{
+          border-color: #F0AD4E;
+          color: #d58512;
+          background-color: rgba(240, 173, 78, 0.1);
+      }
+
+          .testimonial.testimonial-warning .testimonial-section:after{
+              border-top-color: #F0AD4E;
+          }
+
+      .testimonial.testimonial-warning .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-warning .testimonial-desc img{
+              border-color: #F0AD4E;
+          }
+
+          .testimonial.testimonial-warning .testimonial-writer-name{
+              color: #F0AD4E;
+          }
+
+  .testimonial.testimonial-danger{
+      
+  }
+      .testimonial.testimonial-danger .testimonial-section{
+          border-color: #D9534F;
+          color: #c9302c;
+          background-color: rgba(217, 83, 79, 0.1);
+      }
+
+          .testimonial.testimonial-danger .testimonial-section:after{
+              border-top-color: #D9534F;
+          }
+
+      .testimonial.testimonial-danger .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-danger .testimonial-desc img{
+              border-color: #D9534F;
+          }
+
+          .testimonial.testimonial-danger .testimonial-writer-name{
+              color: #D9534F;
+          }
+
+  /*---- Filled Styles ----*/
+  .testimonial.testimonial-default-filled{
+      
+  }
+      .testimonial.testimonial-default-filled .testimonial-section{
+          color: #fff;
+          border-color: #777;
+          background-color: #777;
+      }
+
+          .testimonial.testimonial-default-filled .testimonial-section:after{
+              border-top-color: #777;
+          }
+
+      .testimonial.testimonial-default-filled .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-default-filled .testimonial-desc img{
+              border-color: #777;
+              background-color: #777;
+          }
+
+          .testimonial.testimonial-default-filled .testimonial-writer-name{
+              color: #777;
+          }
+
+  .testimonial.testimonial-primary-filled{
+      
+  }
+      .testimonial.testimonial-primary-filled .testimonial-section{
+          color: #fff;
+          background-color: #337ab7;
+          border-color: #2e6da4;
+      }
+
+          .testimonial.testimonial-primary-filled .testimonial-section:after{
+              border-top-color: #337AB7;
+          }
+
+      .testimonial.testimonial-primary-filled .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-primary-filled .testimonial-desc img{
+              border-color: #2e6da4;
+              background-color: #337ab7;
+          }
+
+          .testimonial.testimonial-primary-filled .testimonial-writer-name{
+              color: #337AB7;
+          }
+
+  .testimonial.testimonial-info-filled{
+      
+  }
+      .testimonial.testimonial-info-filled .testimonial-section{
+          color: #fff;
+          background-color: #5bc0de;
+          border-color: #46b8da;
+      }
+
+          .testimonial.testimonial-info-filled .testimonial-section:after{
+              border-top-color: #5BC0DE;
+          }
+
+      .testimonial.testimonial-info-filled .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-info-filled .testimonial-desc img{
+              border-color: #46b8da;
+              background-color: #5bc0de;
+          }
+
+          .testimonial.testimonial-info-filled .testimonial-writer-name{
+              color: #5BC0DE;
+          }
+
+
+  .testimonial.testimonial-success-filled{
+      
+  }
+      .testimonial.testimonial-success-filled .testimonial-section{
+          color: #fff;
+          background-color: #5cb85c;
+          border-color: #4cae4c;
+      }
+
+          .testimonial.testimonial-success-filled .testimonial-section:after{
+              border-top-color: #5CB85C;
+          }
+
+      .testimonial.testimonial-success-filled .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-success-filled .testimonial-desc img{
+              border-color: #4cae4c;
+              background-color: #5cb85c;
+          }
+
+          .testimonial.testimonial-success-filled .testimonial-writer-name{
+              color: #5CB85C;
+          }
+
+  .testimonial.testimonial-warning-filled{
+      
+  }
+      .testimonial.testimonial-warning-filled .testimonial-section{
+          color: #fff;
+          background-color: #f0ad4e;
+          border-color: #eea236;
+      }
+
+          .testimonial.testimonial-warning-filled .testimonial-section:after{
+              border-top-color: #F0AD4E;
+          }
+
+      .testimonial.testimonial-warning-filled .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-warning-filled .testimonial-desc img{
+              border-color: #eea236;
+              background-color: #f0ad4e;
+          }
+
+          .testimonial.testimonial-warning-filled .testimonial-writer-name{
+              color: #F0AD4E;
+          }
+
+  .testimonial.testimonial-danger-filled{
+      
+  }
+      .testimonial.testimonial-danger-filled .testimonial-section{
+              color: #fff;
+              background-color: #d9534f;
+              border-color: #d43f3a;
+      }
+
+          .testimonial.testimonial-danger-filled .testimonial-section:after{
+              border-top-color: #D9534F;
+          }
+
+      .testimonial.testimonial-danger-filled .testimonial-desc{
+          
+      }
+
+          .testimonial.testimonial-danger-filled .testimonial-desc img{
+              border-color: #d43f3a;
+              background-color: #D9534F;
+          }
+
+          .testimonial.testimonial-danger-filled .testimonial-writer-name{
+              color: #D9534F;
+          }
+
+// END TESTIMONIAL CSS
+// --------------------------------------------
+
+
+// .yotpo.yotpo-main-widget .yotpo-label .yotpo-logo-title, .yotpo .yotpo-modal-dialog .yotpo-label .yotpo-logo-title {
+//     visibility: hidden;
+// }
+
+// .yotpo.yotpo-main-widget .yotpo-label .yotpo-icon-btn-big a, .yotpo .yotpo-modal-dialog .yotpo-label .yotpo-icon-btn-big a {
+//     visibility: hidden;
+// }
+.yotpo .yotpo-small-box {
+    padding: 0px 10px 0 10px !important;
+}
+
+// .yotpo .yotpo-nav {
+//     visibility: hidden;
+// }
+
+// .yotpo .yotpo-small-box, .yotpo .yotpo-regular-small-box, .yotpo .yotpo-popup-box-medium {
+//     border-bottom: none !important;
+// }
+// END YOTPO CSS
+// --------------------------------------------
+
+
+// IN THE BOX TABLES
+// --------------------------------------------
+
+.intheboximg {
+    max-width: 200px;
+    max-height: 93px;
+    display: block;
+    margin: 0 auto;
+}
+
+.intheboxtable td {
+    vertical-align: middle;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+}
+// .intheboxtable td a {
+// text-decoration: none;
+// }
+
+.intheboxtable td:nth-of-type(1) {
+    width: 100%;
+
+}
+
+.intheboxtable td:nth-of-type(0) {
+    text-align: center !important;
+}
+
+
+// H2 Page
+
+.h2_page {
+    background-image: url("  https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-wet-banner-fade.jpg?t=1512766244");
+    background-size: cover;
+    background-position: bottom;
+}
+.winter_jumbo {
+    background-image: url("https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/winter-holiday-sale-2017-1500x.png?t=1513019209");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.winter_sale a,
+.winter_jumbo a,
+.h2_page a {
+    text-decoration: none;
+}
+
+// .winter_sale img {
+//     max-height: 400px;
+// }
+
+.winter_jumbo_content {
+    display: flex;
+    /* flex-direction: column;*/
+    align-items: bottom;
+    height: 780px;
+}
+.ws_column {
+    display: flex;
+    /* flex-direction: column;*/
+    align-items: center; 
+    // border: green solid 1px;
+}
+
+.winter_sale_price_box {
+    margin-top: auto;
+    margin-bottom: auto;
+    // border: solid red 1px;
+}
+
+.price_in {
+    font-weight: 900;
+
+}
+.price_out {
+    font-size: 1.25rem;
+}
+
+
+.h2_features {
+    text-align: center;
+    h4 {
+        margin-top: .5em;
+    }
+}
+
+
+.h2_jumbo_content {
+    @media (max-width: 767px) { 
+        background: $dark;
+        background-color:rgba(0, 0, 0, 0.5);
+        padding: 10px 15px 15px 15px;
+        color: White;
+        h1 {
+            color: white;
+        }
+    }
+}

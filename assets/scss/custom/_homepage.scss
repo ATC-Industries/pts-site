@@ -1,0 +1,96 @@
+// =============================================================================
+// HOME PAGE CSS
+// =============================================================================
+
+
+/* Top banner Section */
+.h2_main {
+    background-image: url("https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/h2-1200x600.png");
+    background-size: cover;
+    background-position: center; 
+    min-height: 500px;
+}
+.banner_text {
+    h1 { max-width: 400px; }
+    p { max-width: 400px; }
+    width: 100%;
+    background-color: rgba($gray-200, .7);
+    padding: .75em;
+    text-align: center;
+    @include breakpoint("small") {
+        padding-top: 25px;
+        background-color: transparent;
+        margin-left: 3rem;
+        text-align: left;
+    }   
+}
+.h2_main h1 {
+    font-family: 'Coda', cursive;
+}
+.model357 p,
+.h2_main p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+    line-height: 1.25em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.breadcrumb-nav {
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.jumbotron.model357 {
+    background-image: url("https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/model357.png");
+    background-size: cover;
+    background-position: top;
+    @include breakpoint("small") {
+        padding-top: 0;
+    }
+}
+
+.numone {
+    h1 { max-width: 350px; }
+    width: 100%;
+    background-color: rgba($gray-200, .7);
+    padding: .75em;
+    text-align: center;
+    @include breakpoint("small") {
+        padding-top: 25px;
+        background-color: transparent;
+        text-align: left;
+        padding-top: 0;
+        p {
+            max-width: 175px;
+        }
+    }
+}
+
+.need_banner_text {
+    width: 100%;
+    background-color: rgba($gray-200, .7);
+    padding: .75em;
+    text-align: center;
+}
+
+.boxes {
+    height: 400px;
+    overflow: hidden;
+}
+
+.acc_box {
+    background-image: url("https://cdn6.bigcommerce.com/s-190w8a8x/product_images/uploaded_images/basket.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.h2_main h1, .model357 h1{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+

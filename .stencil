@@ -1,0 +1,12 @@
+{
+  "normalStoreUrl": "https://tournamentscales.com/",
+  "port": "3000",
+  "clientId": "g8r56bj5p48lsak2hv4urmirl023lhq",
+  "accessToken": "74hce9vj9h4uqezlbq37997bpbczsc",
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}

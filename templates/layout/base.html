@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale_name }}">
+    <head>
+        <title>{{ head.title }}</title>
+        {{{ head.meta_tags }}}
+        {{{ head.config }}}
+        {{#block "head"}} {{/block}}
+        <link href="{{ head.favicon }}" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+        {{{stylesheet '/assets/css/theme.css'}}}
+         <!--styles first + loader last-->
+        <!-- <script defer src="/assets/js/fontawesome/styles/fa-v4-shims.js"></script>
+        <script defer src="/assets/js/fontawesome/styles/fa-brands.js"></script>
+        <script defer src="/assets/js/fontawesome/styles/fa-light.js"></script>
+        <script defer src="/assets/js/fontawesome/styles/fa-regular.js"></script>
+        <script defer src="/assets/js/fontawesome/styles/fa-solid.js"></script>
+        <script src="/assets/js/fontawesome/fontawesome.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script> -->
+        <script src="https://use.fontawesome.com/f99da2994a.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+        {{ getFontsCollection }}
+        <script src="{{cdn 'assets/modernizr-custom.js'}}"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        {{{head.scripts}}}
+        {{{head.rsslinks}}}
+
+        {{inject 'themeSettings' theme_settings}}
+        {{inject 'genericError' (lang 'common.generic_error')}}
+        {{inject 'maintenanceMode' settings.maintenance}}
+        {{inject 'urls' urls}}
+        {{{snippet 'htmlhead'}}}
+    </head>
+    <body>
+        {{{snippet 'header'}}}
+        <div class="icons-svg-sprite">{{> components/common/icons/icon-defs }}</div>
+
+        {{#if settings.privacy_cookie}}
+            {{> components/common/cookie}}
+        {{/if}}
+
+        {{> components/common/header }}
+        {{> components/common/body }}
+        {{> components/common/footer }}
+
+        <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
+        <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
+
+        <script>
+            // Exported in app.js
+                window.stencilBootstrap("{{page_type}}", {{ jsContext }}).load();
+        </script>
+
+        {{{footer.scripts}}}
+        {{{snippet 'footer'}}}
+        <!-- Yotpo Script -->
+        <script type="text/javascript"> 
+            (function e(){var e=document.createElement("script");
+            e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/FLITm7uObuKN8U7bWEwNuWw8e8EP44FHco63CwXW/widget.js";
+            var t=document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e,t)})();
+        </script> 
+
+        <script type="text/javascript">//<![CDATA[
+            var div = document.createElement("div");
+            div.setAttribute('class', 'yotpo yotpo-main-widget');
+            div.setAttribute('data-product-id',"{{product.id}}");
+            div.setAttribute('data-name',"{{product.title}}");
+            div.setAttribute('data-url', "{{settings.base_url}}{{product.url}}");
+            div.setAttribute('data-image-url', "{{getImage product.main_image 'product'}}");
+            div.setAttribute('data-price', "{{#if product.price.with_tax}}{{product.price.with_tax.value}}{{/if}}{{#if product.price.without_tax}}{{product.price.without_tax.value}}{{/if}}");
+            div.setAttribute('data-currency', "{{currency_selector.active_currency_code}}");
+            document.querySelectorAll('.tab-review')[0].appendChild(div)//]]>
+        </script>​
+    </body>
+</html>
